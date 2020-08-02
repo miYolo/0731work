@@ -1,0 +1,734 @@
+body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    font-weight: 400;
+}
+
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #303133;
+    line-height: 1.75;
+}
+
+
+/* 头部开始 */
+
+.header {
+    width: 100%;
+    height: 940px;
+    position: relative;
+    background-color: black;
+}
+
+.banners {
+    transition: all 2s ease;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.banner-imgs {
+    width: 400%;
+    transition: transform 2s ease;
+}
+
+.banners img {
+    width: 25%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 113px;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+    transition: all 1s ease;
+}
+
+.nav-text li {
+    float: left;
+}
+
+.nav-text li a {
+    line-height: 113px;
+    margin-right: 30px;
+    font-size: 16px;
+    color: #303133;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.search {
+    width: 90px;
+    height: 100%;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), url('../font/iconfont.woff2') format('woff2'), url('../font/iconfont.woff') format('woff'), url('../font/iconfont.ttf') format('truetype'), url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+.search-icon {
+    font-size: 20px;
+    margin-left: 35px;
+    line-height: 113px;
+    font-family: "iconfont";
+    display: inline-block;
+}
+
+.banner-text {
+    position: absolute;
+    left: 380px;
+    top: 260px;
+}
+
+.banner-text span:first-of-type {
+    font-size: 15px;
+    color: #303133;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.banner-text span:nth-of-type(2) {
+    font-weight: bold;
+}
+
+.banner-text span:nth-of-type(3) {
+    font-size: 40px;
+    color: rgba(255, 255, 255, .8);
+    letter-spacing: 15px;
+    line-height: 70px;
+}
+
+.banner-text input {
+    width: 213px;
+    height: 62px;
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    line-height: 62px;
+    border: none;
+    letter-spacing: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.choose {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.choose span {
+    font-size: 40px;
+    color: white;
+    margin-right: 20px;
+}
+
+
+/* 头部结束 */
+
+
+/* 引导开始 */
+
+.leader {
+    width: 100%;
+    height: 423px;
+    background-color: #f7f7f7;
+    border-color: #eaeaea!important;
+    position: relative;
+}
+
+.leader-content {
+    width: 1053px;
+    height: 279px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.leader-content-one {
+    width: 255px;
+    height: 279px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-right: 36px;
+}
+
+.leader-span {
+    text-align: left;
+    line-height: 1.75;
+    font-size: 14px;
+}
+
+
+/* 引导结束 */
+
+
+/* 需求开始 */
+
+.demand {
+    width: 100%;
+    height: 304px;
+    position: relative;
+}
+
+.demand-content {
+    height: 160px;
+    width: 636px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.demand-content-text {
+    font-size: 45px;
+    color: #303133;
+    letter-spacing: -.05em;
+    font-family: Poppins!important;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-text-middle {
+    border-color: #006cff!important;
+    width: 90px;
+    border-top-width: 2px;
+    margin: 20px auto;
+}
+
+.content-text-bottom {
+    color: #777;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+
+/* 需求结束 */
+
+
+/* 产品开始 */
+
+.productor {
+    width: 100%;
+    height: 742px;
+    position: relative;
+}
+
+.productor-content {
+    width: 1305px;
+    height: 454px;
+    position: absolute;
+    bottom: 95px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.productor-one {
+    width: 387px;
+    height: 113px;
+    display: flex;
+    flex-direction: row;
+}
+
+.productor-icon {
+    width: 36px;
+    margin-right: 27px;
+}
+
+.p-icon {
+    font-family: "iconfont";
+    font-size: 36px;
+    vertical-align: top;
+}
+
+.productor-content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.productor-content-right a {
+    font-size: 15 px !important;
+}
+
+
+/* 产品结束 */
+
+
+/* 评价开始 */
+
+.commend {
+    width: 100%;
+    height: 441px;
+    position: relative;
+}
+
+.commend img {
+    width: 100%;
+    height: 441px;
+}
+
+.commend-content {
+    width: 924px;
+    height: 177px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.first-commend {
+    font-size: inherit;
+    letter-spacing: inherit;
+    color: #fff;
+    line-height: 1.75;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.commend-middle {
+    font-size: inherit;
+    color: #fff;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.commends {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.commend-btn {
+    width: 100%;
+    height: 19px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.commend-btn span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 20px;
+    background-color: rgba(247, 247, 247, .75);
+}
+
+
+/* 评价结束 */
+
+
+/* 案例按钮开始 */
+
+.menu-btn {
+    width: 100%;
+    height: 117px;
+}
+
+.menu-btns {
+    width: 895px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-btns input {
+    width: 116.81px;
+    height: 45px;
+    background-color: #006cff;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5%;
+    border: none;
+}
+
+
+/* 案例按钮结束 */
+
+
+/* 案例内容开始 */
+
+.menu {
+    width: 100%;
+    height: 177px;
+    position: relative;
+}
+
+.inner-menu {
+    width: 1128px;
+    height: 105px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.inner-menu-imgs a img {
+    width: 158px;
+    height: 105.33px;
+    float: left;
+    margin-left: 30px;
+}
+
+
+/* 案例内容结束 */
+
+
+/* 案例展示开始 */
+
+.examples {
+    width: 100%;
+    height: 950px;
+}
+
+.examples ul li a img {
+    width: 33.33%;
+    height: 475px;
+    float: left;
+}
+
+.good {
+    width: 1128px;
+    height: 1063px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.good-middle {
+    margin-top: 80px;
+    width: 1128px;
+    height: 659px;
+    margin: 80 auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.good-middle-one {
+    width: 364px;
+    height: 659px;
+    background-color: #fff;
+}
+
+.good-one-top img {
+    width: 364px;
+    height: 204px;
+}
+
+.good-middle-link {
+    width: 200px;
+    height: 26px;
+    font-size: 20px;
+    margin: 0 auto;
+    font-weight: bold;
+    text-align: left;
+}
+
+.good-middle-text {
+    width: 220px;
+    height: 232px;
+    margin: 72px auto;
+    background-color: white;
+}
+
+.good-middle-text hr {
+    border: 0;
+    border-top-width: 1px;
+    border-style: solid;
+    width: 220px;
+    height: 1px;
+    background-color: #777;
+    margin: 18px auto;
+}
+
+.good-middle-text p {
+    font-size: 15px;
+    color: #777;
+    text-align: left;
+}
+
+.good-one-bottom {
+    font-size: 12px;
+    margin-top: 72px;
+    font-weight: 600;
+    float: left;
+    margin-left: 9px;
+}
+
+.good-bottom-btn span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #777;
+    display: block;
+    margin: 40px 24px 18px 0px;
+    float: left;
+}
+
+.good-bottom-btn {
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-btn {
+    width: 117px;
+    height: 44px;
+    font-size: 12px;
+    background-color: #006cff;
+    margin: 100px auto;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10em;
+    color: #fff;
+    line-height: 44px;
+}
+
+.bottom {
+    background-color: #fbfdfe;
+    width: 100%;
+    height: 1400px;
+}
+
+
+/* 案例展示结束 */
+
+
+/* 底部开始 */
+
+.last {
+    width: 100%;
+    height: 143px;
+    background-color: #1b1d1f;
+    position: relative;
+}
+
+.contact {
+    width: 103px;
+    height: 14px;
+    color: #006cff;
+    font-size: 14px;
+    top: 5px;
+    bottom: 36px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    display: block;
+    font-weight: bold;
+    letter-spacing: .5em;
+}
+
+.last div:not(.bottom-bottom) {
+    width: 600px;
+    height: 42px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.bottom-bottom {
+    width: 600px;
+    height: 30px;
+    font-size: 20px;
+    color: #777;
+    margin: 18px auto;
+}
+
+.massage {
+    width: 810px;
+    height: 140px;
+    margin: 42px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.last-middle {
+    width: 100%;
+    height: 275px;
+    background-color: #1b1d1f;
+    float: left;
+}
+
+.massage input {
+    width: 364px;
+    height: 56px;
+    text-align: left;
+    padding-left: 27px;
+    font-size: 18px;
+    line-height: 56px;
+    outline: none;
+}
+
+.bottom-sub {
+    width: 181px;
+    height: 50px;
+    background-color: #006cff;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/* 底部结束 */
+
+
+/* 结束部分开始 */
+
+.ending {
+    width: 100%;
+    height: 557px;
+    background-color: #1b1d1f;
+}
+
+.ending-text {
+    width: 316px;
+    height: 305px;
+    margin: auto;
+    padding-top: 36px;
+}
+
+.ending-text-one {
+    padding: 36px;
+    color: white;
+    font-size: 12px;
+}
+
+.ending-border {
+    height: 343px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.ending-bottom {
+    width: 100%;
+    height: 120px;
+    background-color: #1b1d1f;
+}
+
+.ending-bottom span {
+    display: block;
+    width: 1122px;
+    text-align: left;
+    color: white;
+    margin: 0 auto;
+    padding-left: 78px;
+    font-size: 13px;
+    line-height: 1.75em;
+}
+
+.right-call {
+    width: 112px;
+    height: 220px;
+    position: fixed;
+    z-index: 2;
+}
+
+.call-img {
+    position: absolute;
+}
+
+.call-btn {
+    width: 88px;
+    height: 28px;
+    color: white;
+    background-color: orange;
+    cursor: pointer;
+    text-align: center;
+    line-height: 28px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin: auto;
+}
+
+
+/* 结束部分结束 */
